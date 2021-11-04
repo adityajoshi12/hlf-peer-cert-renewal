@@ -36,3 +36,9 @@ cp "${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.exa
 fabric-ca-client enroll -u https://peer0:peer0pw@localhost:8054 --caname ca-org2 -M "${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp" --csr.hosts peer0.org2.example.com --tls.certfiles "${PWD}/organizations/fabric-ca/org2/tls-cert.pem"  
 
 ```
+
+## OpenSSL Commands
+```
+openssl x509 -in <file-path> -text
+
+```
